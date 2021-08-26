@@ -19,15 +19,16 @@ public class WinControl : MonoBehaviour
         {
 
  
-            if (GoalHolderBlue.mavitakimgol==5 )
+            if (GoalHolderBlueSingle.mavitakimgol==5 )
             {
 
             SceneManager.LoadScene("LoseScreen");
            
 
             }
-            if(GoalHolderKirmizi.kýrmýzýtakýmgol == 5)
+            if(GoalHolderKirmiziSingle.kýrmýzýtakýmgol == 5)
             {
+                Debug.Log("roy yenildi");
                 PlayerPrefs.SetInt("boss", 1);
                 PlayerPrefs.Save();
             SceneManager.LoadScene("WinScreen");
@@ -37,11 +38,11 @@ public class WinControl : MonoBehaviour
 
 
         }
-        if((PlayerPrefs.GetInt("boss") == 1))
+        else if((PlayerPrefs.GetInt("boss") == 1))
             {
 
 
-            if (GoalHolderBlue.mavitakimgol == 5)
+            if (GoalHolderBlueSingle.mavitakimgol == 5)
             {
 
                 SceneManager.LoadScene("LoseScreen");
@@ -49,7 +50,7 @@ public class WinControl : MonoBehaviour
                 
 
             }
-            if (GoalHolderKirmizi.kýrmýzýtakýmgol == 5)
+            else if (GoalHolderKirmiziSingle.kýrmýzýtakýmgol == 5)
             {
 
                 SceneManager.LoadScene("WinScreen");
@@ -60,21 +61,20 @@ public class WinControl : MonoBehaviour
 
 
         }
-
-
-        if ((PlayerPrefs.GetInt("boss") == 2))
+       else if ((PlayerPrefs.GetInt("boss") == 2))
         {
 
 
-            if (GoalHolderBlue.mavitakimgol == 5)
+            if (GoalHolderBlueSingle.mavitakimgol == 5)
             {
 
                 SceneManager.LoadScene("LoseScreen");
 
 
             }
-            if (GoalHolderKirmizi.kýrmýzýtakýmgol == 5)
+            if (GoalHolderKirmiziSingle.kýrmýzýtakýmgol == 5)
             {
+                Debug.Log("bu niye çalýþtý");
                 PlayerPrefs.SetInt("boss", 3);
                 PlayerPrefs.Save();
                 SceneManager.LoadScene("WinScreen");

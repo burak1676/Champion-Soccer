@@ -1018,8 +1018,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e84d70959dbdd9545985b0bd9928194d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shoot_audio: {fileID: 0}
-  dribbling_audio: {fileID: 0}
+  shoot_audio: {fileID: 7071840595882467948}
+  dribbling_audio: {fileID: 7071840595882467949}
   power: 50
   dribblingPower: 20
 --- !u!1 &6899698240527611518
@@ -1311,7 +1311,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7071840595491532368
 RectTransform:
   m_ObjectHideFlags: 0
