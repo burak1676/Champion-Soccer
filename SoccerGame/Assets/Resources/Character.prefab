@@ -1,29 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &7071840596143379573
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2676534984984505425}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3638e65f333141418feffec92a28853, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &7071840596107553585
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2676534985587723313}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0a1f173154b5d240a406be884510e9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &6899698239004947159
 GameObject:
   m_ObjectHideFlags: 0
@@ -589,7 +565,7 @@ MonoBehaviour:
   sprintBarHeightPercent: 0.02
   enableJump: 1
   jumpKey: 32
-  jumpPower: 10
+  jumpPower: 5
   enableCrouch: 1
   holdToCrouch: 1
   crouchKey: 306
@@ -2193,16 +2169,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28ff4af34168fbf479fb8c3f2930b448, type: 3}
---- !u!1 &2676534985587723313 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5116317801450881413, guid: 28ff4af34168fbf479fb8c3f2930b448, type: 3}
-  m_PrefabInstance: {fileID: 7071840595544657332}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &2676534984984505425 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5116317802051428837, guid: 28ff4af34168fbf479fb8c3f2930b448, type: 3}
-  m_PrefabInstance: {fileID: 7071840595544657332}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &4255834654347925002 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6425504843285453758, guid: 28ff4af34168fbf479fb8c3f2930b448, type: 3}
@@ -2341,11 +2307,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
---- !u!224 &5369120763881552937 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
-  m_PrefabInstance: {fileID: 7071840596092866011}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &5369120763881552932 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2929252283123773951, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
@@ -2357,3 +2318,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45977bbae16431c46a013576a1aea384, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!224 &5369120763881552937 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
+  m_PrefabInstance: {fileID: 7071840596092866011}
+  m_PrefabAsset: {fileID: 0}

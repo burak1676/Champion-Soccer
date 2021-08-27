@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ScoreHolder : MonoBehaviour
+public class ScoreHolderKırmızıMulti : MonoBehaviour
 {
-
     Text scoretext;
 
     // Start is called before the first frame update
@@ -13,18 +12,18 @@ public class ScoreHolder : MonoBehaviour
     private void Awake()
     {
         scoretext = GetComponent<Text>();
-        GoalHolderBlueSingle.mavitakimgol = 0;
-        GoalHolderKirmiziSingle.k�rm�z�tak�mgol = 0;
+        GoalHolderBlue.mavitakimgol = 0;
+        GoalHolderKirmizi.kırmızıtakımgol = 0;
 
     }
     void Start()
     {
-      
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        scoretext.text = " " + GoalHolderKirmiziSingle.k�rm�z�tak�mgol;
+        scoretext.text = " " + GoalHolderKirmizi.kırmızıtakımgol;
     }
 }

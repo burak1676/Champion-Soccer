@@ -1,18 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class ScoreHolderBlue : MonoBehaviour
+public class ScoreHolderBlueMesh : MonoBehaviour
 {
     // Start is called before the first frame update
-    Text scoretext2;
+    TMPro.TextMeshPro scoretext2;
 
     // Start is called before the first frame update
 
     private void Awake()
     {
-        scoretext2 = GetComponent<Text>();
+        scoretext2 = GetComponent<TMPro.TextMeshPro>();
         GoalHolderBlueSingle.mavitakimgol = 0;
         GoalHolderKirmiziSingle.kýrmýzýtakýmgol = 0;
 
