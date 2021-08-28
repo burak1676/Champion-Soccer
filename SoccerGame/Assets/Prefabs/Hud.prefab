@@ -49,7 +49,7 @@ GameObject:
   - component: {fileID: 5116317801450881412}
   - component: {fileID: 5116317801450881410}
   - component: {fileID: 5116317801450881411}
-  - component: {fileID: 4525235582262459346}
+  - component: {fileID: 8055589315649637325}
   m_Layer: 5
   m_Name: score_eq2_t
   m_TagString: Untagged
@@ -118,7 +118,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 0
---- !u!114 &4525235582262459346
+--- !u!114 &8055589315649637325
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -127,7 +127,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5116317801450881413}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fdcbe2406324e9d4d9cced9c0bddcef0, type: 3}
+  m_Script: {fileID: 11500000, guid: a0a1f173154b5d240a406be884510e9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &5116317801872411124
@@ -216,7 +216,7 @@ GameObject:
   - component: {fileID: 5116317802051428836}
   - component: {fileID: 5116317802051428834}
   - component: {fileID: 5116317802051428835}
-  - component: {fileID: 1682680636698227128}
+  - component: {fileID: 100875263630665371}
   m_Layer: 5
   m_Name: score_eq1_t
   m_TagString: Untagged
@@ -285,7 +285,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 0
---- !u!114 &1682680636698227128
+--- !u!114 &100875263630665371
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -294,6 +294,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 5116317802051428837}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3ec84adc1cbd914e9fd11b0edc0aaf4, type: 3}
+  m_Script: {fileID: 11500000, guid: b3638e65f333141418feffec92a28853, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

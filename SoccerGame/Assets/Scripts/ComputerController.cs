@@ -239,6 +239,39 @@ public class ComputerController : MonoBehaviour
         anim.SetBool("Shot", true);
         if (difficulty == Difficulty.Low)
         {
+            if (transform.rotation.y > 0.46 && transform.rotation.y < 0.76)
+            {
+                float angleOfRate = 80f;
+                onRight(angleOfRate);
+                rigidbody = ballPointer.GetComponent<Rigidbody>();
+                Vector3 a = new Vector3(this.transform.forward.x, Random.Range(0.22f, 0.23f), this.transform.forward.z); //Topun karþýya gitmesini saðlayan z.
+                rigidbody.velocity = a * power;
+            }
+            if (transform.rotation.y < -0.46 && transform.rotation.y > -0.76)
+            {
+                float angleOfRate = 80f;
+                onLeft(angleOfRate);
+                rigidbody = ballPointer.GetComponent<Rigidbody>();
+                Vector3 a = new Vector3(this.transform.forward.x, Random.Range(0.22f, 0.23f), this.transform.forward.z); //Topun karþýya gitmesini saðlayan z.
+                rigidbody.velocity = a * power;
+            }
+            if (transform.rotation.y > 0.8)
+            {
+                float angleOfRate = 95f;
+                onRight(angleOfRate);
+                rigidbody = ballPointer.GetComponent<Rigidbody>();
+                Vector3 a = new Vector3(this.transform.forward.x, Random.Range(0.22f, 0.23f), this.transform.forward.z); //Topun karþýya gitmesini saðlayan z.
+                rigidbody.velocity = a * power;
+            }
+            if (transform.rotation.y < -0.8)
+            {
+                float angleOfRate = 95f;
+                onLeft(angleOfRate);
+                rigidbody = ballPointer.GetComponent<Rigidbody>();
+                Vector3 a = new Vector3(this.transform.forward.x, Random.Range(0.22f, 0.23f), this.transform.forward.z); //Topun karþýya gitmesini saðlayan z.
+                rigidbody.velocity = a * power;
+            }
+
             if (transform.position.x >= 50 && transform.position.x <= 60)
             {
                 float angleOfRate = 20f;
@@ -275,6 +308,39 @@ public class ComputerController : MonoBehaviour
 
         else if(difficulty == Difficulty.Medium)
         {
+            if (transform.rotation.y > 0.46 && transform.rotation.y < 0.76)
+            {
+                float angleOfRate = 80f;
+                onRight(angleOfRate);
+                rigidbody = ballPointer.GetComponent<Rigidbody>();
+                Vector3 a = new Vector3(this.transform.forward.x, Random.Range(0.22f, 0.23f), this.transform.forward.z); //Topun karþýya gitmesini saðlayan z.
+                rigidbody.velocity = a * power;
+            }
+            if (transform.rotation.y < -0.46 && transform.rotation.y > -0.76)
+            {
+                float angleOfRate = 80f;
+                onLeft(angleOfRate);
+                rigidbody = ballPointer.GetComponent<Rigidbody>();
+                Vector3 a = new Vector3(this.transform.forward.x, Random.Range(0.22f, 0.23f), this.transform.forward.z); //Topun karþýya gitmesini saðlayan z.
+                rigidbody.velocity = a * power;
+            }
+            if (transform.rotation.y > 0.8)
+            {
+                float angleOfRate = 95f;
+                onRight(angleOfRate);
+                rigidbody = ballPointer.GetComponent<Rigidbody>();
+                Vector3 a = new Vector3(this.transform.forward.x, Random.Range(0.22f, 0.23f), this.transform.forward.z); //Topun karþýya gitmesini saðlayan z.
+                rigidbody.velocity = a * power;
+            }
+            if (transform.rotation.y < -0.8)
+            {
+                float angleOfRate = 95f;
+                onLeft(angleOfRate);
+                rigidbody = ballPointer.GetComponent<Rigidbody>();
+                Vector3 a = new Vector3(this.transform.forward.x, Random.Range(0.22f, 0.23f), this.transform.forward.z); //Topun karþýya gitmesini saðlayan z.
+                rigidbody.velocity = a * power;
+            }
+
             if (transform.position.x >= 50 && transform.position.x <= 60)
             {
                 float angleOfRate = 15f;
@@ -458,10 +524,10 @@ public class ComputerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(GoalHolderBlue.isBlueTeamScored == true)
+        if(GoalHolderBlueSingle.isBlueTeamScored == true)
         {
             anim.SetBool("HappinessOfGoal", true);
-            GoalHolderBlue.isBlueTeamScored = false;
+            GoalHolderBlueSingle.isBlueTeamScored = false;
             
         }
         Debug.Log(transform.rotation.y);

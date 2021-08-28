@@ -87,7 +87,7 @@ public class SahneMotoru : MonoBehaviour
 
     public void goSingle()
     {
-        PlayerPrefs.DeleteKey("boss");
+       // PlayerPrefs.DeleteKey("boss");
         SceneManager.LoadScene("Singleplayer");
 
     }
